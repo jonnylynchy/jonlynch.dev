@@ -9,9 +9,13 @@ export class CanvasBackground extends PtsCanvas {
     }
 
     _create() {
+        // how many rows and columns? Based on 50px spread
+        const rows = Math.ceil(this.space.size.x / 50);
+        const cols = Math.ceil(this.space.size.y / 50);
+
         // Create a line and a grid, and convert them to `Noise` points
-        let gd = Create.gridPts(this.space.innerBound, 20, 20);
-        this.noiseGrid = Create.noisePts(gd, 0.01, 0.1, 20, 20);
+        let gd = Create.gridPts(this.space.innerBound, rows, cols);
+        this.noiseGrid = Create.noisePts(gd, 0.01, 0.1, rows, cols);
         this.space.setup({ bgcolor: "#fff", retina: true });
     }
 

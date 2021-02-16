@@ -8,7 +8,7 @@ function App() {
             <CanvasBackground />
             <section id="main">
                 <div>
-                    <img src={logo} alt="dev tech logo" class="logo" />
+                    <img src={logo} alt="dev tech logo" className="logo" />
                 </div>
                 <div>
                     <h1>Jon Lynch</h1>

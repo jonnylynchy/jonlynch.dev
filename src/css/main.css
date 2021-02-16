@@ -4,12 +4,40 @@ html,body {
 
 body {
     font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background: url(../images/bg.png);
+    background-size: 20px;
+}
+
+#root {
+    display: flex;
+    height: 100%;
 }
 
 #main {
+    font-size: .8em;
+    min-width: 300px;
+    width:20%;
     display:flex;
+    align-items: center;
+    margin:auto;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#main div h1, #main div h3 {
+    margin: 3px 10px
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 200;
 }
 
 .logo {
-    width: 5em;
+    width: 4.3em;
 }

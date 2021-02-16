@@ -1,12 +1,12 @@
-import logo from './images/dev-tech-logo.svg';
-import './css/main.css';
+import logo from '../images/dev-tech-logo.svg';
+import '../css/main.css';
 
 function App() {
     return (
         <section id="main">
-            <figure>
+            <div>
                 <img src={logo} alt="dev tech logo" class="logo" />
-            </figure>
+            </div>
             <div>
                 <h1>Jon Lynch</h1>
                 <h3>Teacher &amp; Full-stack Developer</h3>

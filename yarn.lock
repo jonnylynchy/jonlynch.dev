@@ -8056,6 +8056,10 @@ psl@^1.1.28:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.7.0.tgz#f1c4c47a8ef97167dea5d6bbf4816d736e884a3c"
 
+pts@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/pts/-/pts-0.10.1.tgz#eeea6f480cd6ba0ebe031c4fce03cd63a8c1639d"
+
 public-encrypt@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/public-encrypt/-/public-encrypt-4.0.3.tgz#4fcc9d77a07e48ba7527e7cbe0de33d0701331e0"
@@ -8231,6 +8235,10 @@ react-is@^16.8.1:
 react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
+
+react-pts-canvas@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/react-pts-canvas/-/react-pts-canvas-0.2.8.tgz#3a13990b2411747276d77d8061523dc81c0df22b"
 
 react-refresh@^0.8.3:
   version "0.8.3"

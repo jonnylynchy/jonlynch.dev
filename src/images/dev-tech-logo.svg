@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 248 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="logo" transform="matrix(1,0,0,1,-665.99,-580.009)">
+        <g id="Rounded-Rectangle-1" serif:id="Rounded Rectangle 1">
+            <path d="M670.158,693.933L779.862,584.18C785.42,578.619 794.432,578.619 799.991,584.18L909.694,693.933C915.253,699.494 915.253,708.51 909.694,714.071L799.991,823.824C794.432,829.385 785.42,829.385 779.862,823.824L670.158,714.071C664.6,708.51 664.6,699.494 670.158,693.933Z" style="fill:rgb(16,16,16);"/>
+            <path d="M670.158,693.933L779.862,584.18C785.42,578.619 794.432,578.619 799.991,584.18L909.694,693.933C915.253,699.494 915.253,708.51 909.694,714.071L799.991,823.824C794.432,829.385 785.42,829.385 779.862,823.824L670.158,714.071C664.6,708.51 664.6,699.494 670.158,693.933ZM682.716,704.002L789.926,811.26L897.136,704.002L789.926,596.743L682.716,704.002Z" style="fill:rgb(247,210,61);"/>
+        </g>
+        <g id="_---" serif:id="&lt;|&gt;" transform="matrix(1.81019,0,0,1.81078,731.473,742.111)">
+            <text x="0px" y="0px" style="font-family:'SignPainter-HouseScript', 'SignPainter';font-size:72px;fill:rgb(247,211,63);">&lt;<tspan x="21.456px 38.304px " y="0px 0px ">|&gt;</tspan></text>
+        </g>
+    </g>
+</svg>

@@ -7,20 +7,34 @@ import '../css/main.css';
 function App() {
     return (
         <>
-            <CanvasBackground />
             <section id="main">
-                <div className="flex">
-                    <div>
-                        <img src={logo} alt="dev tech logo" className="logo" />
+                <CanvasBackground />
+                <div id="business-card">
+                    <div className="flex">
+                        <div>
+                            <img src={logo} alt="dev tech logo" className="logo" />
+                        </div>
+                        <div>
+                            <h1>Jon Lynch</h1>
+                            <h3>Teacher &amp; Full-stack Developer</h3>
+                        </div>
                     </div>
                     <div>
-                        <h1>Jon Lynch</h1>
-                        <h3>Teacher &amp; Full-stack Developer</h3>
+                        <img src={arrow} alt="click me" className="arrow bounce" />
                     </div>
                 </div>
-                <div>
-                    <img src={arrow} alt="click me" className="arrow bounce" />
-                </div>
+            </section>
+            <section id="content">
+                <h1>Hello.</h1>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
+                <p>And here is some more content. Etc. </p>
             </section>
         </>
     );

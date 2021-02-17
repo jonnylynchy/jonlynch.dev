@@ -42,7 +42,18 @@ body {
 
 #business-card .flex {
     background: #fff;
+    transition: all 1000ms ease;
 }
+
+.fade-initial {
+  opacity: 0;
+  margin-left: -100px;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 #business-card div h1, #main div h3 {
     margin: 3px 10px
 }

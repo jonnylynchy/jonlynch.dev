@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { CanvasBackground } from '../components/canvas-background';
 import logo from '../images/dev-tech-logo.svg';
 import arrow from '../images/down-arrow.svg';
@@ -5,12 +6,17 @@ import arrow from '../images/down-arrow.svg';
 import '../css/main.css';
 
 function App() {
+    const [initialStyle, setInitialStyle] = useState('fade-initial');
+    useEffect(() => {
+        setTimeout(() => setInitialStyle('fade-in'), 500);
+    }, []);
+
     return (
         <>
             <section id="main">
                 <CanvasBackground />
                 <div id="business-card">
-                    <div className="flex">
+                    <div className={`flex ${initialStyle}`}>
                         <div>
                             <img src={logo} alt="dev tech logo" className="logo" />
                         </div>
@@ -20,21 +26,12 @@ function App() {
                         </div>
                     </div>
                     <div>
-                        <img src={arrow} alt="click me" className="arrow bounce" />
+                        <a href="#content"><img src={arrow} alt="click me" className="arrow bounce" /></a>
                     </div>
                 </div>
             </section>
             <section id="content">
-                <h1>Hello.</h1>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
-                <p>And here is some more content. Etc. </p>
+                {/* WIP */}
             </section>
         </>
     );

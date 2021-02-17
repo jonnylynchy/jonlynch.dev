@@ -23,7 +23,6 @@ export class CanvasBackground extends PtsCanvas {
 
         // Create a line and a grid, and convert them to `Noise` points
         let gd = Create.gridPts(this.space.innerBound, rows, cols);
-        console.log(gd);
         this.noiseGrid = Create.noisePts(gd, 0.01, 0.1, rows, cols);
         this.space.setup({ bgcolor: "#fff", retina: true });
         this._chooseColors();
@@ -67,12 +66,12 @@ export class CanvasBackground extends PtsCanvas {
 
         // Generate noise in a grid
         this.noiseGrid.forEach((p, i) => {
-            p.step(0.01 * (1 - speed.x), 0.01 * (1 - speed.y));
+            p.step(0.0085 * (1 - speed.x), 0.0085 * (1 - speed.y));
             this.form
                 .fillOnly(this.pColors[i])
                 .point(
                     p,
-                    Math.abs(p.noise2D() * 3),
+                    Math.abs(p.noise2D() * 5),
                     "circle"
                 );
         });

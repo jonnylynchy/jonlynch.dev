@@ -43,17 +43,6 @@ body {
     margin: 3px 10px
 }
 
-#main button {
-    margin-top: 25px;
-    min-width: 200px;
-    padding: 7px 20px;
-    background: #F7D23D;
-    border: 3px solid #333;
-    display: block;
-    color: #333;
-    border-radius: 8px;
-}
-
 h1 {
     font-weight: 400;
 }

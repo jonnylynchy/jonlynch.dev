@@ -6,6 +6,14 @@ export class CanvasBackground extends PtsCanvas {
     constructor() {
         super();
         this.noiseGrid = [];
+        this.pColors = [];
+        this.colors = [
+            "#C23DF7",
+            "#F73D8D",
+            "#3DB2F7",
+            "#3DF1F7",
+            "#808080"
+        ];
     }
 
     _create() {
@@ -17,6 +25,14 @@ export class CanvasBackground extends PtsCanvas {
         let gd = Create.gridPts(this.space.innerBound, rows, cols);
         this.noiseGrid = Create.noisePts(gd, 0.01, 0.1, rows, cols);
         this.space.setup({ bgcolor: "#fff", retina: true });
+        this._chooseColors();
+    }
+
+    _chooseColors() {
+        for (let i = 0; i < this.noiseGrid.length; i++) {
+            const randColorIndex = Math.floor(Math.random() * this.colors.length);
+            this.pColors.push(this.colors[randColorIndex]);
+        }
     }
 
     componentDidUpdate() {
@@ -48,17 +64,17 @@ export class CanvasBackground extends PtsCanvas {
         // Use pointer position to change speed
         let speed = this.space.pointer.$subtract(this.space.center).divide(this.space.center).abs();
 
-        // console.log('SPEED?', speed);
         // Generate noise in a grid
-        this.noiseGrid.forEach(p => {
+        this.noiseGrid.forEach((p, i) => {
+
             p.step(0.01 * (1 - speed.x), 0.01 * (1 - speed.y));
-            this.form.fillOnly("#808080").point(
+            this.form.fillOnly(this.pColors[i]).point(
                 p,
-                Math.abs(p.noise2D() * this.space.size.x / 300),
+                Math.abs(p.noise2D() * 3),
                 "square"
             );
             // const randSize = Math.abs(Math.random() * 3);
-            // this.form.fillOnly("#333").point(p, p.noise2D() * randSize, "square");
+            this.form.fillOnly().point(p, .5, "square");
         });
 
     }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { CanvasBackground } from '../components/canvas-background';
+import Bouncer from '../animations/bouncer';
 import logo from '../images/dev-tech-logo.svg';
 import arrow from '../images/down-arrow.svg';
 
@@ -26,7 +27,9 @@ function App() {
                         </div>
                     </div>
                     <div>
-                        <a href="#content"><img src={arrow} alt="click me" className="arrow bounce" /></a>
+                        <Bouncer>
+                            <a href="#content"><img src={arrow} alt="click me" className="arrow" /></a>
+                        </Bouncer>
                     </div>
                 </div>
             </section>

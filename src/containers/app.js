@@ -10,10 +10,15 @@ function App() {
     const [initialStyle, setInitialStyle] = useState('fade-initial');
     useEffect(() => {
         setTimeout(() => setInitialStyle('fade-in'), 500);
+        window.addEventListener('scroll', () => {
+            const scrollPerc = window.pageYOffset / document.body.offsetHeight; 
+            document.body.style.setProperty('--scroll',scrollPerc);
+        }, false);
     }, []);
 
     return (
         <>
+            <div className="progress"></div>
             <section id="main">
                 <CanvasBackground />
                 <div id="business-card">
@@ -26,15 +31,14 @@ function App() {
                             <h3>Teacher &amp; Full-stack Developer</h3>
                         </div>
                     </div>
-                    <div>
-                        <Bouncer>
-                            <a href="#content"><img src={arrow} alt="click me" className="arrow" /></a>
-                        </Bouncer>
-                    </div>
+                    <Bouncer>
+                        <a href="#content"><img src={arrow} alt="click me" className="arrow" /></a>
+                    </Bouncer>
                 </div>
             </section>
             <section id="content">
                 {/* WIP */}
+                <h1>Coming soon...</h1>
             </section>
         </>
     );

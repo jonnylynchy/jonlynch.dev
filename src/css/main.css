@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html,body {
     height: 100%;
 }
@@ -5,8 +9,9 @@ html,body {
 body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background: url(../images/bg.png);
-    background-size: 32px;
+    overflow-x: hidden;
+    /* background: url(../images/bg.png);
+    background-size: 32px; */
 }
 
 #root {
@@ -45,6 +50,16 @@ body {
     transition: all 1000ms ease;
 }
 
+#content {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    background: #101010;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fade-initial {
   opacity: 0;
   margin-left: -100px;
@@ -79,4 +94,31 @@ h3 {
 
 .flex {
     display: flex;
+}
+
+.progress {
+    height: 3px;
+    width: 0%;
+    background-color: #F7D23D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: progress 1s linear;
+    z-index: 2;
+}
+
+@keyframes progress {
+    to {
+        width: 100%;
+    }
+}
+
+:root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }

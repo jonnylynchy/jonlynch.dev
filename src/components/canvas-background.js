@@ -18,8 +18,8 @@ export class CanvasBackground extends PtsCanvas {
 
     _create() {
         // how many rows and columns? Based on 50px spread
-        const rows = Math.ceil(this.space.size.x / 50);
-        const cols = Math.ceil(this.space.size.y / 50);
+        const rows = Math.ceil(this.space.size.x / 100);
+        const cols = Math.ceil(this.space.size.y / 100);
 
         // Create a line and a grid, and convert them to `Noise` points
         let gd = Create.gridPts(this.space.innerBound, rows, cols);

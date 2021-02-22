@@ -6,9 +6,9 @@ const Bouncer = ({ children }) => {
       timing: {
         delay: 500, // Start with a 500ms delay
         duration: 1000, // Run for 1000ms
-        iterations: 1000, // Repeat once
+        iterations: Infinity, // Repeat once
         easing: "ease-in-out", // Use a fancy timing function
-      },  
+      },
     });
   
     return (

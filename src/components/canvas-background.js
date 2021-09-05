@@ -43,7 +43,6 @@ export class CanvasBackground extends PtsCanvas {
         }
     }
 
-
     // Override PtsCanvas' start function
     start(space, bound) {
         this._create();
